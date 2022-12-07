@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>GMX documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header class="nav-h"><a href="https://gmxio.gitbook.io/gmx/"><img class="logo" src="https://s2.coinmarketcap.com/static/img/coins/200x200/11857.png"></a>GMX Documentation</header>
+        <a class="nav-link" href="#GMX">GMX</a>
+        <a class="nav-link" href="#Tokenomics">Tokenomics</a>
+        <a class="nav-link" href="#Roadmap">Roadmap</a>
+        <a class="nav-link" href="#Rewards">Rewards</a>
+        <a class="nav-link" href="#GLP">GLP</a>
+        <a class="nav-link" href="#Trading">Trading</a>
+        <a class="nav-link" href="#Referrals">Referrals</a>
+        <a class="nav-link" href="#API">API</a>
+        <a class="nav-link" href="#Contracts">Contracts</a>
+        <a class="nav-link" href="#Audit">Audit</a>
+        <a class="nav-link" href="#Bug_Bounty">Bug Bounty</a>
+        <a class="nav-link" href="#Media_Kit">Media Kit</a>
+        <a class="nav-link" href="#App_Links">App Links</a>
+        <a class="nav-link" href="#Community_Groups">Community Groups</a>
+      </nav>
+      <section id="GMX" class="main-section">
+        <header>GMX</header>
+        <p>GMX is a decentralized spot and perpetual exchange that supports low swap fees and zero price impact trades.</p>
+        <p>Trading is supported by a unique multi-asset pool that earns liquidity providers fees from market making, swap fees and leverage trading.</p>
+        <p>Dynamic pricing is supported by Chainlink Oracles and an aggregate of prices from leading volume exchanges.</p>
+        <ul>
+          <li>For token holders: <a href="#Tokenomics">Tokenomics</a> and <a href="#Rewards">Rewards</a></li>
+          <li>For liquidity providers: <a href="#GLP">GLP</a></li>
+          <li>For traders: <a href="#Trading">Trading</a></li>
+        </ul>
+      </section>
+      <section id="Tokenomics" class="main-section">
+        <header>Tokenomics</header>
+        <p class="description">GMX is the platform's utility and governance token, holding the token unlocks a variety of benefits.</p>
+        <h2>Token Information</h2>
+        <p>The GMX token address is: <span class="address">0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a</span> (Arbitrum), <span class="address">0x62edc0692BD897D2295872a9FFCac5425011c661</span> (Avalanche). </p>
+        <p>After staking GMX, you will receive a staked GMX token: <span class="address">0xd2D1162512F927a7e282Ef43a362659E4F2a728F</span> (Arbitrum), <span class="address">0x4d268a7d4C16ceB5a606c173Bd974984343fea13</span> (Avalanche). Note that the balance for this will return your total staked amount including any esGMX tokens and Multiplier Points.</p>
+        <p>GMX can be bridged between Arbitrum and Avalanche using Synapse.</p>
+        <h2>Staking</h2>
+        <p>Staked GMX receives three types of rewards:</p>
+        <ul>
+          <li>Escrowed GMX</li>
+          <li>Multiplier Points</li>
+          <li>ETH / AVAX Rewards</li>
+        </ul>
+        <p>For more info on Escrowed GMX and Multiplier Points, please see the <a href="#Rewards">Rewards</a> page.</p>
+        <p>30% of fees generated from swaps and leverage trading are converted to ETH / AVAX and distributed to staked GMX tokens. If you are staking on Arbitrum you would receive ETH, if you are staking on Avalanche then you would receive AVAX. Note that the fees distributed are based on the number after deducting <a href="#Referrals">referral rewards</a> and the network costs of keepers, keeper costs are usually around 1% of the total fees.</p>
+        <h2>Supply</h2>
+        <p>The supply of GMX can be viewed on the Dashboard.</p>
+        <p>The increase in circulating supply will vary depending on the number of tokens that get vested, and the amount of tokens used for marketing / partnerships. The forecasted max supply is 13.25 million GMX tokens. </p>
+        <ul>
+          <li>6 million GMX from the XVIX and Gambit migration.</li>
+          <li>2 million GMX paired with ETH for liquidity on Uniswap.</li>
+          <li>2 million GMX reserved for vesting from Escrowed GMX rewards.</li>
+          <li>2 million GMX tokens to be managed by the floor price fund.</li>
+          <li>1 million GMX tokens reserved for marketing, partnerships and community developers.</li>
+          <li>250,000 GMX tokens distributed to contributors linearly over 2 years.</li>
+        </ul>
+        <p>GMX liquidity on Uniswap is gradually added as the price of GMX increases, the Uniswap liquidity pool is at <span class="address">0x80A9ae39310abf666A87C743d6ebBD0E8C42158E</span>.</p>
+        <p>Liquidity is owned by the protocol and stored under the same multi-sig signers as the XVIX and Gambit migration. Multi-sig contracts:</p>
+        <ul>
+          <li><span class="address">0x50F22389C10FcC3bA9B1AB9BCDafE40448a357FB</span></li>
+          <li><span class="address">0x4E29d2ee6973E5Bd093df40ef9d0B28BD56C9e4E</span></li>
+        </ul>
+        <h2>Bridging</h2>
+        <p>GMX tokens can be bridged between Ethereum and Arbitrum, but you should not use this unless absolutely necessary. All features are on Arbitrum so there should be no strong reason to bridge tokens. If you bridge tokens from Arbitrum to Ethereum there will be a 7 day waiting period during which you will not have access to your tokens. </p>
+        <p>Instructions to bridge: <a class="address" href="https://gist.github.com/xvi10/6125b5fbd73f12a2bfce9b729a52255a">https://gist.github.com/xvi10/6125b5fbd73f12a2bfce9b729a52255a</a></p>
+        <p>For bridging between Arbitrum and Avalanche you can use Synapse.</p>
+      </section>
+      <section id="Roadmap" class="main-section">
+        <header>Roadmap</header>
+        <h2>Roadmap Updates</h2>
+        <ul>
+          <li>20 May 2022: <a class="address" href="https://medium.com/@gmx.io/gmx-update-3-33341d13571d">https://medium.com/@gmx.io/gmx-update-3-33341d13571d</a></li>
+          <li>8 Apr 2022: <a class="address" href="https://medium.com/@gmx.io/x4-protocol-controlled-exchange-c931cd9a1ae9">https://medium.com/@gmx.io/x4-protocol-controlled-exchange-c931cd9a1ae9</a></li>
+          <li>30 Nov 2021: <a class="address" href="https://medium.com/@gmx.io/gmx-update-2-4f6e0f75e0ce">https://medium.com/@gmx.io/gmx-update-2-4f6e0f75e0ce</a></li>
+          <li>14 Sep 2021: <a class="address" href="https://medium.com/@gmx.io/gmx-update-1-55255e695d62">https://medium.com/@gmx.io/gmx-update-1-55255e695d62</a></li>
+        </ul>
+        <h2>Announcements</h2>
+        <p>Telegram: <a class="address" href="https://t.me/GMX_Announcements">https://t.me/GMX_Announcements</a></p>
+        <p>Discord: <a class="address" href="https://discord.gg/cxjZYR4gQK">https://discord.gg/cxjZYR4gQK</a></p>
+        <h2>Archvies</h2>
+        <h4>30 March 2022</h4>
+        <p>The 1.5% minimum profit rule has been removed. GMX used to require that the mark price must have moved by at least 1.5% for a position to be in profit, this has now been updated to a two part transaction process without the 1.5% rule.</p>
+      </section>
+      <section id="Rewards" class="main-section">
+        <header>Rewards</header>
+        <p class="description">GMX Rewards provide benefits for long term users of the protocol, these rewards come in the form of Escrowed GMX and Multiplier Points.</p>
+        <h2>Compounding vs Claiming</h2>
+        <p>There are two options for rewards on <a class="address" href="https://app.gmx.io/#/earn">https://app.gmx.io/#/earn</a> : "Compound" and "Claim".</p>
+        <p>Compounding will stake your pending Multiplier Points and Escrowed GMX rewards, this will increase the amount of rewards you receive.</p>
+        <p>Claiming will transfer any pending Escrowed GMX rewards and ETH / AVAX rewards to your wallet.</p>
+        <p>If you compound or stake your Escrowed GMX tokens, you can unstake them for vesting at anytime later on.</p>
+        <h2>Escrowed GMX</h2>
+        <p>Escrowed GMX (esGMX) can be used in two ways:</p>
+        <ol>
+          <li>Staked for rewards similar to regular GMX tokens</li>
+          <li>Vested to become actual GMX tokens over a period of one year</li>
+        </ol>
+        <p>Each staked Escrowed GMX token will earn the same amount of Escrowed GMX and ETH / AVAX rewards as a regular GMX token.</p>
+        <p>Note that Escrowed GMX (esGMX) is not meant to be transferrable unless you are doing a full account transfer. The amount of GMX or GLP required to vest esGMX is unique per account and capped to the rewards received by that account. Please do not buy esGMX off the market or OTC as you will not be able to vest them.</p>
+        <h2>Vesting</h2>
+        <p>Escrowed GMX (esGMX) tokens can be converted into GMX tokens through vesting, this can be accessed on the Earn page. </p>
+        <p>When vesting is initiated, the average amount of GMX or GLP tokens that was used to earn the esGMX rewards will be reserved.</p>
+        <p>For example: <code>if you staked 1000 GMX and earned 100 esGMX tokens, then to vest 100 esGMX tokens, 1000 GMX tokens will be reserved. To vest 50 esGMX, 500 GMX tokens will be reserved.</code> Note that this is an example and the actual ratio depends on the average staked amount and rewards earned for your account.</p>
+        <p>esGMX tokens that have been unstaked and deposited for vesting will not earn rewards. Staked tokens that are reserved for vesting will continue to earn rewards.</p>
+        <p>After initiating vesting, the esGMX tokens will be converted into GMX every second and will fully vest over 365 days. esGMX tokens that have been converted into GMX are claimable at anytime.</p>
+        <p>If a user sells GMX or GLP tokens and would like to vest their esGMX rewards later on, they would need to re-buy the GMX or GLP tokens. GMX, esGMX and Multiplier Points can be used interchangeably for the required reserve amount.</p>
+        <p>Depositing into the vesting vault while existing vesting is ongoing is supported.</p>
+        <p>Tokens that are reserved for vesting cannot be unstaked or sold. To unreserve the tokens, use the "Withdraw" button on the Earn page. Partial withdrawals are not supported, so withdrawing will withdraw and unreserve all tokens as well as pause vesting. All esGMX tokens that had been vested into GMX will remain as GMX tokens.</p>
+        <h2>Multiplier Points</h2>
+          <p>Multiplier Points reward long term holders without inflation.</p>
+          <p>When you stake GMX, you receive Multiplier Points every second at a fixed rate of 100% APR. 1000 GMX staked for one year would earn 1000 Multiplier Points.</p>
+          <p>Multiplier points can be staked for fee rewards by pressing the "Compound" button on the Earn page, each multiplier point will boost ETH / AVAX APRs at the same rate as a regular GMX token. </p>
+          <p>When GMX or Escrowed GMX tokens are unstaked, the proportional amount of Multiplier Points are burnt. For example: <code>if 1000 GMX is staked and 500 Multiplier Points have been earned so far, then unstaking 300 GMX would burn 150 (300 / 1000 * 500) Multiplier Points. </code>The burn will apply to the total amount of Multiplier Points which includes both staked and unstaked Multiplier Points.</p>
+          <p>The "Boost Percentage" shown on the Earn page shows your individual boost amount from Multiplier Points. For example, if the ETH APR is 10% and you have $10,000 worth of GMX and esGMX, then your rewards would be $1000 annualized, if you additionally have an amount of Multiplier Points equivalent to 20% of your total amount of GMX and Escrowed GMX, your "Boost Percentage" would display as 20%, and you would get an extra $200 of ETH rewards annualized. The “Boost Percentage” is calculated from the ratio of Multiplier Points to your total amount of staked GMX:</p>
+          <code>Boost Percentage = 100 * (Staked Multiplier Points) / (Staked GMX + Staked esGMX)</code>
+          <p>An example:</p>
+          <code>100 * (4.5656) / (7.54 + 2.00) = 47.85%</code>
+          <img class="example" src="https://3951038884-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Me94cyqTgUX4nZxCJ-M%2Fuploads%2FbrlqzR2l4pQwmZqltWcD%2Fmultiplier-points.png?alt=media&token=fcf5d023-b1db-4412-ae45-0ab92d014a55"><img>
+          <h2>Distribution Rate</h2>
+          <p>Escrowed GMX will be distributed to staked GMX and GLP according to the schedule in the latest snapshot vote.</p>
+          <p>Rewards are distributed every second to staked tokens.</p>
+          <p>Reward rates will be evaluated each month and may be subjected to changes. Any modifications will be announced at least 7 days in advance before being implemented.</p>
+          <h2>Summary</h2>
+          <p>A summary of rewards and mechanics:</p>
+          <ul>
+            <li>GMX: earns ETH / AVAX, esGMX, Multiplier Points when staked</li>
+            <li>esGMX: earns ETH / AVAX, esGMX, Multiplier Points when staked</li>
+            <li>Multiplier Points: boost ETH / AVAX APRs when staked</li>
+            <li>GLP: earns ETH / AVAX, esGMX, automatically staked on mint</li>
+          </ul>
+      </section>
+      <section id="GLP" class="main-section">
+        <header>GLP</header>
+        <p class="description">GLP is the platform's liquidity provider token.</p>
+        <p>GLP consists of an index of assets used for swaps and leverage trading. It can be minted using any index asset and burnt to redeem any index asset. The price for minting and redemption is calculated based on: <code>(total worth of assets in index including profits and losses of open positions) / (GLP supply).</code></p>
+        <p>For Arbitrum, holders of the GLP token earn Escrowed GMX <a href="#Rewards">rewards</a> and 70% of platform fees distributed in ETH. For Avalanche, holders of the GLP token earn Escrowed GMX <a href="#Rewards">rewards</a> and 70% of platform fees distributed in AVAX. Note that the fees distributed are based on the number after deducting <a href="Referrals">referral rewards</a> and the network costs of keepers, keeper costs are usually around 1% of the total fees.</p>
+        <p>Staked GLP token address (Arbitrum): <span class="address">0x1aDDD80E6039594eE970E5872D247bf0414C8903</span></p>
+        <p>Staked GLP token address (Avalanche): <span class="address">0x9e295B5B976a184B14aD8cd72413aD846C299660</span></p>
+        <p>Note that GLP is specific to the network you mint it on, it is not directly transferrable between networks and the price / rewards to the tokens will differ between networks.</p>
+        <p>As GLP holders provide liquidity for leverage trading, they will make a profit when leverage traders make a loss and vice versa. Past PnL data, GLP price chart and other stats can be viewed on <a class="address" href="https://stats.gmx.io">https://stats.gmx.io.</a></p>
+      </section>
+      <section id="Trading" class="main-section">
+        <header>Trading</header>
+        <p><a>In progress...</a></p>
+      </section>
+      <section id="Referrals" class="main-section">
+        <header>Referrals</header>
+        <p><a>In progress...</a></p>
+      </section>
+      <section id="API" class="main-section">
+        <header>API</header>
+        <p><a>In progress...</a></p>
+      </section>
+      <section id="Contracts" class="main-section">
+        <header>Contracts</header>
+        <p><a>In progress...</a></p>
+      </section>
+      <section id="Audit" class="main-section">
+        <header>Audit</header>
+        <p><a>In progress...</a></p>
+      </section>
+      <section id="Bug_Bounty" class="main-section">
+        <header>Bug Bounty</header>
+        <p><a>In progress...</a></p>
+      </section>
+      <section id="Media_Kit" class="main-section">
+        <header>Media Kit</header>
+        <p><a>In progress...</a></p>
+      </section>
+      <section id="App_Links" class="main-section">
+        <header>App Links</header>
+        <p><a>In progress...</a></p>
+      </section>
+      <section id="Community_Groups" class="main-section">
+        <header>Community Groups</header>
+        <p><a>In progress...</a></p>
+      </section>
+    </main>
+  </body>
+<html>
