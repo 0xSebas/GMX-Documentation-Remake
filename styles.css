@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  font-family: Roboto;
+  background-color: #fdfffc;
+}
+
+.logo {
+  position: relative;
+  width: 10%;
+  padding: 3;
+  top: 0.5rem;
+}
+
+nav {
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  width: 18rem;
+  border-right: 2px solid #0077b6;
+  font-size: 1.2rem;
+  margin-left: 0;
+  height: 100%;
+  display: flex;
+}
+
+.nav-link {
+  border-bottom: 1.5px solid #0077b6;
+  padding: 10;
+  text-decoration: none;
+  color: #7d8597;
+  padding-left: 20;
+}
+
+.nav-h {
+  border-bottom: 1.5px solid #0077b6;
+  font-size: 1.5rem;
+  padding: 10;
+}
+
+.navbar-p:last-of-type {
+  border-bottom: 0;
+}
+
+.main-section {
+  margin-left: 20rem;
+  margin-top: 0.75rem;
+}
+
+.main-section:first-of-type {
+  margin-top: 4.5rem;
+}
+
+header {
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 20;
+}
+
+#GMX > header:first-child {
+  width: 20rem;
+}
+
+p {
+  padding: 10;
+}
+
+.main-section a{
+  text-decoration: none;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+li {
+  padding: 5;
+}
+
+.description {
+  color: #66666e;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.main-section header {
+  font-size: 1.9rem;
+}
+
+.address {
+  font-style: italic;
+  color: #64b5f6 !important;
+  font-weight: 500 !important;
+}
+
+h2, h4 {
+  margin-left: 15px;
+  padding: 15;
+}
+
+code {
+  background-color: #bde0fe;
+  display: block;
+  padding: 10;
+  border-radius: 5px;
+  margin: 15 20 15 10;
+}
+
+.example {
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 65%;
+  min-width: 300px;
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none
+}
+
+ul li::before {
+  content: "\2022";
+  color: #3a86ff;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  nav {
+    width: 100px;
+    font-size: 70%;
+  }
+  .nav-h {
+    font-size: 70%;
+  }
+  .main-section {
+    margin-left: 7.5rem;
+  }
+}
