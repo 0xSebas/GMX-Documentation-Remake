@@ -2,6 +2,8 @@
   margin: 0;
   font-family: Roboto;
   background-color: #fdfffc;
+  background-color: #09263d;
+  color: white;
 }
 
 .logo {
@@ -25,16 +27,19 @@ nav {
 
 .nav-link {
   border-bottom: 1.5px solid #0077b6;
-  padding: 10;
+  padding: 10px;
   text-decoration: none;
-  color: #7d8597;
-  padding-left: 20;
+  color: white;
+  padding-left: 20px;
 }
 
 .nav-h {
   border-bottom: 1.5px solid #0077b6;
-  font-size: 1.5rem;
-  padding: 10;
+  font-size: 2rem;
+  padding: 10px;
+  border-top: none !important;
+  color: white;
+  font-weight: normal;
 }
 
 .navbar-p:last-of-type {
@@ -53,7 +58,13 @@ nav {
 header {
   font-weight: 600;
   font-size: 1.4rem;
-  padding: 20;
+  margin: 20px;
+  color: #0000ff;
+  border-top: 1px solid #0000ff;
+}
+
+.gmx-header {
+  border-top: none !important;
 }
 
 #GMX > header:first-child {
@@ -61,21 +72,21 @@ header {
 }
 
 p {
-  padding: 10;
+  padding: 10px;
 }
 
 .main-section a{
   text-decoration: none;
   color: #1976d2;
-  font-weight: 600;
+  font-weight: 600px;
 }
 
 li {
-  padding: 5;
+  padding: 5px;
 }
 
 .description {
-  color: #66666e;
+  color: white;
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -91,8 +102,9 @@ li {
 }
 
 h2, h4 {
-  margin-left: 15px;
-  padding: 15;
+  margin-left: 25px;
+  padding: 20px;
+  color: #3a86ff;
 }
 
 code {
@@ -101,6 +113,10 @@ code {
   padding: 10;
   border-radius: 5px;
   margin: 15 20 15 10;
+  width: 50%;
+  padding: 10px;
+  font-weight: bold;
+  color: #0000ff;
 }
 
 .example {
@@ -122,6 +138,10 @@ ul li::before {
   display: inline-block; 
   width: 1em;
   margin-left: -1em;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (min-width: 200px) and (max-width: 600px) {
